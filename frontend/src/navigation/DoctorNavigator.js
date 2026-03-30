@@ -10,6 +10,7 @@ import PatientSearchScreen from '../screens/doctor/PatientSearchScreen';
 import AddPatientScreen from '../screens/doctor/AddPatientScreen';
 import DoctorProfileScreen from '../screens/doctor/DoctorProfileScreen';
 import DoctorViewProfileScreen from '../screens/doctor/DoctorViewProfileScreen';
+import DoctorChatBotScreen from '../screens/doctor/DoctorChatBotScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -23,6 +24,7 @@ const DashboardStack = () => (
     <Stack.Screen name="PatientSearch" component={PatientSearchScreen} />
     <Stack.Screen name="Profile" component={DoctorViewProfileScreen} />
     <Stack.Screen name="EditProfile" component={DoctorProfileScreen} />
+    <Stack.Screen name="ChatBot" component={DoctorChatBotScreen} />
   </Stack.Navigator>
 );
 

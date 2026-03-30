@@ -13,6 +13,7 @@ import RemindersScreen from '../screens/patient/RemindersScreen';
 import AddMedicationScreen from '../screens/patient/AddMedicationScreen';
 import PatientProfileScreen from '../screens/patient/PatientProfileScreen';
 import EditPatientDetailsScreen from '../screens/patient/EditPatientDetailsScreen';
+import ChatBotScreen from '../screens/patient/ChatBotScreen';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();
@@ -26,6 +27,7 @@ const DashboardStack = () => (
     <Stack.Screen name="Profile" component={PatientProfileScreen} />
     <Stack.Screen name="Settings" component={EditPatientDetailsScreen} />
     <Stack.Screen name="Schedule" component={MedicationSchedule} />
+    <Stack.Screen name="ChatBot" component={ChatBotScreen} />
   </Stack.Navigator>
 );
 

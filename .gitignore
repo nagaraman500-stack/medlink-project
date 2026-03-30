@@ -20,3 +20,6 @@ Thumbs.db
 
 # Environment files
 .env
+
+# application properties
+backend/src/main/resources/application.properties

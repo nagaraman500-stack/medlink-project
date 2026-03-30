@@ -22,10 +22,11 @@ export const patientService = {
 
   // Additional patient data helpers
   getAllPatients: (options) => api.get('/patient', options),
-  searchPatients: (name, options) => api.get(`/patient/search?name=${encodeURIComponent(name)}`, options),
-  getMedications: (patientId, options) => api.get(`/patient/${patientId}/medications`, options),
-  getVitalsHistory: (patientId, options) => api.get(`/patient/${patientId}/vitals`, options),
-  getAdherence: (patientId, options) => api.get(`/patient/${patientId}/adherence`, options),
+  searchPatients: (doctorId, query, options) =>
+    api.get(`/patient/search?doctorId=${doctorId}&query=${encodeURIComponent(query)}`, options),
+  getMedications: (patientId, options) => api.get(`/medications/schedule/${patientId}`, options),
+  getVitalsHistory: (patientId, options) => api.get(`/vitals/patient/${patientId}`, options),
+  getAdherence: (patientId, options) => api.get(`/medications/adherence/${patientId}`, options),
 };
 
 export default patientService;

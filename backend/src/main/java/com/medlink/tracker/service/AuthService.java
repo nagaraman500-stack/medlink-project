@@ -15,6 +15,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+import org.springframework.transaction.annotation.Transactional;
+
 @Service
 public class AuthService {
 
@@ -24,6 +26,7 @@ public class AuthService {
     @Autowired private PasswordEncoder passwordEncoder;
     @Autowired private JwtUtil jwtUtil;
 
+    @Transactional
     public Map<String, Object> register(Map<String, String> request) {
         String email = request.get("email");
 String roleStr = request.get("role");
