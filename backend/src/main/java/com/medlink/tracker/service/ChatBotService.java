@@ -72,7 +72,11 @@ public class ChatBotService {
             }
 
             JsonNode root = objectMapper.readTree(response.body());
-            return root.path("choices").get(0).path("message").path("content").asText();
+            JsonNode choices = root.path("choices");
+            if (choices.isArray() && choices.size() > 0) {
+                return choices.get(0).path("message").path("content").asText();
+            }
+            return "Error: No response from AI";
 
         } catch (Exception e) {
             return "Local Error: " + e.getMessage();

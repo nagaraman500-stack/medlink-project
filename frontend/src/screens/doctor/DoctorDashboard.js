@@ -153,6 +153,7 @@ const DoctorDashboard = ({ navigation, route }) => {
     { icon: '👤', label: 'Add Patient', onPress: () => navigation.navigate('AddPatient'), color: '#3b82f6' },
     { icon: '📋', label: 'All Patients', onPress: () => navigation.navigate('PatientList'), color: '#8b5cf6' },
     { icon: '🔍', label: 'Search', onPress: () => navigation.navigate('PatientSearch'), color: '#f59e0b' },
+    { icon: '💬', label: 'MedBot', onPress: () => navigation.navigate('ChatBot'), color: '#059669' },
   ];
 
   const getStatusBadgeStyle = (status) => {

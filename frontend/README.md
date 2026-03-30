@@ -1,4 +1,4 @@
-#  MedLink - Frontend Application
+# 🏥 MedLink - Frontend Application
 
 A React Native mobile application for medication tracking and health management.
 
@@ -47,7 +47,7 @@ After starting the development server:
 -  **Dashboard** - Monitor patient health metrics
 -  **Search Patients** - Quick patient lookup
 
-##  Configuration
+## 🔧 Configuration
 
 ### Backend Connection
 
@@ -65,7 +65,7 @@ Create a `.env` file in the frontend root:
 EXPO_PUBLIC_API_URL=http://localhost:8080/api
 ```
 
-## Project Structure
+##  Project Structure
 
 ```
 frontend/
@@ -87,7 +87,7 @@ frontend/
 │   │   ├── auth/         # Login, Register
 │   │   ├── patient/      # Patient screens
 │   │   │   ├── PatientDashboard.js
-│   │   │   ├── ChatBotScreen.js 
+│   │   │   ├── ChatBotScreen.js  NEW
 │   │   │   └── ...
 │   │   └── doctor/       # Doctor screens
 │   ├── services/         # API service layer
@@ -102,7 +102,7 @@ frontend/
 └── App.js
 ```
 
-## Using the ChatBot (MedBot)
+##  Using the ChatBot (MedBot)
 
 ### Accessing MedBot
 1. Open the Patient Dashboard
@@ -122,7 +122,7 @@ frontend/
 - "What are the side effects of metformin?"
 - "How should I store insulin?"
 
-## Authentication
+##  Authentication
 
 The app uses JWT-based authentication:
 1. User registers or logs in
@@ -130,7 +130,7 @@ The app uses JWT-based authentication:
 3. Token is sent with every API request
 4. Automatic logout on token expiration
 
-## Key Technologies
+##  Key Technologies
 
 - **React Native** - Mobile framework
 - **Expo** - Development platform
@@ -164,7 +164,7 @@ npm install
 - Check import paths are correct
 - Verify screen name matches exactly
 
-## Testing
+##  Testing
 
 ### Manual Testing Checklist
 - [ ] Register new user
@@ -172,7 +172,7 @@ npm install
 - [ ] View dashboard
 - [ ] Add medication
 - [ ] Log vitals
-- [ ] **Chat with MedBot**
+- [ ] **Chat with MedBot** 
 - [ ] Set reminders
 - [ ] Update profile
 
@@ -228,3 +228,4 @@ For issues or questions:
 ---
 
 **Happy Coding!** 🚀
+

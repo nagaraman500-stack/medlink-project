@@ -172,6 +172,7 @@ const PatientDashboard = ({ navigation, route }) => {
     { label: 'View Schedule', icon: 'calendar', route: 'Schedule' },
     { label: 'Log Vitals', icon: 'pulse', route: 'Vitals' },
     { label: 'Reminders', icon: 'notifications', route: 'Reminders' },
+    { label: 'Chat with MedBot', icon: 'chatbubbles', route: 'ChatBot' },
   ];
 
   const stats = [

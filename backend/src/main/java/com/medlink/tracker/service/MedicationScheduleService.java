@@ -41,7 +41,7 @@ public class MedicationScheduleService {
     public List<MedicationSchedule> getCurrentSchedules(String patientId) {
         LocalDate today = LocalDate.now();
         return scheduleRepository.findByPatientIdAndActiveTrueAndStartDateBeforeAndEndDateAfter(
-                patientId, today.plusDays(1), today.minusDays(1));
+                patientId, today.minusDays(1), today.plusDays(1));
     }
 
     public MedicationSchedule getById(String id) {
